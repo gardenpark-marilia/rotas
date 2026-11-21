@@ -1,3 +1,11 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<style>:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}body{margin:0;font-size:14px}img{max-width:100%}</style>
+</head>
+<body>
 <title>Rotas Garden Park</title>
 <meta name="claude:viewport-fit-sides" content="cover">
 <meta name="description" content="Rota da portaria até cada casa do Condomínio Residencial Garden Park, em Marília/SP, pelo Waze ou pelo Google Maps.">
@@ -39,6 +47,7 @@
 }
 
 * { box-sizing: border-box; }
+[hidden] { display: none !important; }
 html, body { min-height: 100%; }
 body {
   background: var(--bg); color: var(--fg); font-family: var(--f-ui); font-size: 16px; line-height: 1.45;
@@ -2091,3 +2100,6 @@ function lerEndereco() {
 window.addEventListener("hashchange", () => { if (!location.hash) { if ($("tela-busca").hidden) voltar(); } else lerEndereco(); });
 lerEndereco();
 </script>
+
+</body>
+</html>
